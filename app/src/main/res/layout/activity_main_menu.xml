@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity">
+
+    <ImageButton
+        android:id="@+id/mainMenuLogoButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logowhite"
+        app:layout_constraintBottom_toTopOf="@id/informationInquiryButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/informationInquiryButton"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:background="#7689CD"
+        android:backgroundTint="#7689CD"
+        android:drawableLeft="@drawable/list"
+        android:paddingLeft="15dp"
+        android:text="정보전송내역 조회"
+        android:textColor="#ffffff"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@id/notificationSettingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainMenuLogoButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/notificationSettingButton"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:background="#7AABCC"
+        android:backgroundTint="#7AABCC"
+        android:drawableLeft="@drawable/notice"
+        android:paddingLeft="15dp"
+        android:text="알림설정"
+        android:textColor="#ffffff"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@id/myInformationButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/informationInquiryButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/myInformationButton"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:background="#79C7D1"
+        android:backgroundTint="#79C7D1"
+        android:drawableLeft="@drawable/privacy"
+        android:paddingLeft="18dp"
+        android:text="내 정보 및 고객센터"
+        android:textColor="#ffffff"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@id/logoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notificationSettingButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logoutButton"
+        android:layout_width="150dp"
+        android:layout_height="42.5dp"
+        android:layout_gravity="center"
+        android:background="#79D8D1"
+        android:text="로그아웃"
+        android:textColor="#ffffff"
+        android:textSize="6pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myInformationButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
